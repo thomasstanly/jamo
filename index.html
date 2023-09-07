@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jamo</title>
+  <link rel="stylesheet" href="font/fontsme.com.url">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="header.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top ">
+      <div class="container-fluid navigation">
+        <button id="navbartoggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand ps-4 mx-auto align-top" href="#"><img src="images/jamo-logo.png" alt="logo"
+            width="95px" /></a>
+        <div class="collapse navbar-collapse ms-5 mt-2" id="navbarTogglerDemo01">
+          <ul class="navbar-nav">
+            <li class="nav-items header-text">
+              <a id="lgseries" class="nav-link text-dark" href="#">SERIES</a>
+            </li>
+            <li class="nav-items header-text">
+              <a id="lgspeakers" href="#" class="nav-link text-dark">SPEAKERS</a>
+            </li>
+            <li class="nav-items header-text">
+              <a href="#" class="nav-link text-dark">RETAILER</a>
+            </li>
+            <li class="nav-items header-text">
+              <a id="lgsupport" href="#" class="nav-link text-dark">SUPPORT</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-magnifying-glass me-5"></i>
+      </div>
+    </nav>
+    <!--  -->
+    <div id="extentions">
+      <div id="lgserieslink"
+        class="d-none d-flex justify-content-center column-gap-4 text-dark row-gap-2 bg-white pt-4 pb-4">
+        <div class="d-flex flex-column row-gap-3 border-end border-dark-subtle pe-3">
+          <a class="text-decoration-none text-dark" href="#">Studio7</a>
+          <a class="text-decoration-none text-dark" href="#">Concert 9 II</a>
+          <a class="text-decoration-none text-dark" href="#">Studio8</a>
+        </div class="d-flex">
+        <div>
+          <a class="d-grid text-decoration-none text-center text-dark row-gap-2" href="">
+            <img src="images/Studio7-Series-In-Living-Room-S7-27FHCS-Grey_MOBILE.avif" alt="">
+            <span><b>Studio7</b></span>
+          </a>
+        </div>
+      </div>
+      <div id="lgspeakerslink"
+        class="d-none d-flex justify-content-center column-gap-4 text-dark row-gap-2 bg-white  pt-4 pb-4">
+        <div class=" d-flex flex-column row-gap-3 border-end border-dark-subtle pe-3 z-1">
+          <a class="text-decoration-none  text-dark" href="#">Home Cinema System</a>
+          <a class="text-decoration-none  text-dark" href="#">Floorstanding Speakers</a>
+          <a class="text-decoration-none  text-dark" href="#">Bookshelf Speakers</a>
+          <a class="text-decoration-none  text-dark" href="#">Center Channel Speakers</a>
+          <a class="text-decoration-none  text-dark" href="#">Surround Sound Speakers</a>
+          <a class="text-decoration-none  text-dark" href="#">Powered Monitor</a>
+          <a class="text-decoration-none  text-dark" href="#">THX</a>
+          <a class="text-decoration-none  text-dark" href="#">Custom Install</a>
+        </div>
+        <div>
+          <a class="d-grid text-decoration-none text-center text-dark row-gap-2" href="">
+            <img src="images/Studio7-Series-In-Living-Room-S7-27FHCS-Grey_MOBILE.avif" alt="">
+            <span><b>Home Cinema System</b></span>
+          </a>
+        </div>
+      </div>
+      <div id="lgsupportlink" class="d-none d-grid justify-content-center row-gap-2 bg-white  pt-3 pb-3 z-1">
+        <a class="text-decoration-none text-dark" href="#">Waranty</a>
+        <a class="text-decoration-none text-dark" href="#">Firmware Updates</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- mobile interface  -->
+  <div id="mobile-size" class="fixed-top d-none">
+    <div>
+      <button class="menu z-1" id="close-button">
+        <i class="fa-solid fa-xmark" style="color: rgb(123, 133, 133); font-size: 25px"></i>
+      </button>
+    </div>
+    <div class="series">
+      <button class="menu" id="serieslink">
+        Series
+        <i id="seriesarrow" class="fa-solid fa-angle-up fa-rotate-90"></i>
+      </button>
+      <div id="seriesHyperlink" class="d-none">
+        <a class="menu text-decoration-none" href="#"><button class="menu">Studio7</button></a>
+        <a class="menu text-decoration-none" href="#"><button class="menu">Concert 9 II</button></a>
+        <a class="menu text-decoration-none" href="#"><button class="menu">Studio8</button></a>
+      </div>
+    </div>
+    <div class="speakers ">
+      <button class="menu" id="speakerslink">
+        Speakers
+        <i id="speakerarrow" class="fa-solid fa-angle-up fa-rotate-90"></i>
+      </button>
+      <div id="speakersHyperlink" class="d-none">
+        <a class="menu text-decoration-none" href="#"><button class="menu">Home Cinema System</button></a>
+        <a class="menu text-decoration-none" href="#"><button class="menu">Floorstanding Speakers</button></a>
+        <a class="menu text-decoration-none" href="#"><button class="menu">Bookshelf Speakers</button></a>
+        <a class="menu text-decoration-none" href="#"><button class="menu">Center Channel Speakers</button></a>
+        <a class="menu text-decoration-none" href="#"><button class="menu">Surround Sound Speakers</button></a>
+        <a class="menu text-decoration-none" href="#"><button class="menu">Subwoofers</button></a>
+      </div>
+    </div>
+    <div class="retailers">
+      <button class="menu">
+        RETAILERS
+      </button>
+    </div>
+    <div class="support">
+      <button class="menu" id="supportlink">
+        Supports
+        <i id="supportarrow" class="fa-solid fa-angle-up fa-rotate-90"></i>
+      </button>
+      <div id="supporthyperlink"  class="d-none">
+        <a class="menu text-decoration-none" href="#"><button class="menu">Waranty</button></a>
+        <a class="menu text-decoration-none" href="#"><button class="menu">Firmware Updates</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- main section -->
+  <main class="container-fluid my-5" >
+    <div class="row my-5">
+      <div class=" col-12 my-5 position-relative rounded-5">
+        <img class=" img-fluid rounded-4" src="images/Jamo-Hero-Studio7_2000x1700.webp" alt="">
+        <div class=" row1 position-absolute start-50 bottom-50 translate-middle">
+          <p class="display-1 text-light text-center "><b> Welcome to<br>Studio7</b></p>
+          <div class="d-flex justify-content-center ">
+            <button id="first-button" " class="btn  py-3 px-4 ">SHOP THE COLLECTION</button>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <div class="row second-row-mobile">
+      <div class="col-12 new-studio d-flex flex-column">
+        <p class="display-3 text-center" style="font-weight: 400;">Welcome to Studio7</p>
+        <button id="first-button-mob"  class="btn mx-auto py-3 px-4">SHOP THE COLLECTION</button>
+      </div>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-12 new-studio d-flex flex-column">
+       <p class="display-3 text-center" style="font-weight: 500;">All New Studio7</p>
+       <p class="fs-5 my-2 text-center" >Studio7 fuses the richness of our past and the boldness of the future. This new line of passive loudspeakers, created in tribute to its two founders, Preben Jacobsen and Julius Mortensen, offers a rare combination of aesthetics and audio performance.</p>
+      </div>
+    </div>
+
+    <div class="row my-5">
+      <div class=" col-12 my-5 position-relative">
+        <img class="img-fluid rounded-4" src="images/7-Degree-Angle-3_DESKTOP.webp" alt="">
+        <div class="row1 position-absolute start-50 top-50 translate-middle">
+          <p class="display-3 text-center" style="font-weight: 100;"><b>THE MAGIC NUMBER</b></p>
+          <p class="text-center" style="font-size:1.2rem;">Studio7 owes its name to the 7° tilt that makes it look and sound so distinctive</p>
+          <div class="d-flex justify-content-center ">
+            <button id="first-button-mob" " class="btn  py-3 px-4 ">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row second-row-mobile">
+      <div class="col-12 new-studio d-flex flex-column">
+        <p class="display-3 text-center" style="font-weight: 100;">THE MAGIC NUMBER</p>
+        <p class="text-center" style="font-size:20px;">Studio7 owes its name to the 7° tilt that makes it look and sound so distinctive</p>
+        <button id="first-button-mob"  class="btn mx-auto py-3 px-4">LEARN MORE</button>
+      </div>
+    </div>
+
+    <div class="container-fluid my-5">
+      <div class="col-12 iframe-container">
+        <iframe src="https://www.youtube.com/embed/_QOijnduzVg?autoplay=1&mute=1&controls=0&disablekb=1&loop=1&&playlist=_QOijnduzVg&autohide=1&modestbranding=1&rel=0&showinfo=0&enablejsapi=1&iv_load_policy=3&playsinline=1&widgetid=1?controls=0&" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+   <center><h1 class="discover display-3 my-5 font-weigth-bold">Discover the series</h1></center>
+  </main>
+
+  <section class="container-fluid justify-content-between">
+    <div class="row justify-content-between gy-5">
+      <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-3">
+        <div class="card mx-auto" style="width: 22rem;">
+          <a href="#"><img id="card-image1" src="images/imagewhite1.webp" class="card-img-top" alt="..."></a>
+          <div class="card-body">                
+            <p id="card-text1" class="card-title text-center">Grey</p>
+            <center>
+              <input id="grey-button1" class="card-button rounded-circle mx-1 mb-3" type="button" onclick="shift('card-image1','card-text1','grey-button1')">
+              <input id="blue-button1" class="card-button rounded-circle mx-1 mb-3" type="button" onclick="shift('card-image1','card-text1','blue-button1')">  
+            </center>
+            <a class=" card-text text-decoration-none text-center" href="#"><h4 class="card-text pb-3">S7-17HCS HOME CINEMA SYSTEM</h4></a>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-3">
+        <div class="card mx-auto" style="width: 22rem;">
+          <a href="#"><img id="card-image2" src="images/imageswhite2.webp" class="card-img-top" alt="..."></a>
+          <div class="card-body">                
+            <p id="card-text2" class="card-title text-center">Grey</p>
+            <center>
+              <input id="grey-button2" class="card-button rounded-circle mx-1 mb-3" type="button" onclick="shift2('card-image2','card-text2','grey-button2')">
+              <input id="blue-button2" class="card-button rounded-circle mx-1 mb-3" type="button" onclick="shift2('card-image2','card-text2','blue-button2')">  
+            </center>
+            <a class=" card-text text-decoration-none text-center" href="#"><h4 class="card-text pb-3">S7-25F FLOORSTANDING SPEAKER</h4></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-4 col-xxl-3">
+        <div class="card mx-auto" style="width: 22rem;">
+          <a href="#"><img id="card-image3" src="images/imagewhite3.webp" class="card-img-top" alt="..."></a>
+          <div class="card-body">                
+            <p id="card-text3" class="card-title text-center">Grey</p>
+            <center>
+              <input id="grey-button3" class="card-button rounded-circle mx-1 mb-3" type="button" onclick="shift3('card-image3','card-text3','grey-button3')">
+              <input id="blue-button3" class="card-button rounded-circle mx-1 mb-3" type="button" onclick="shift3('card-image3','card-text3','blue-button3')">  
+            </center>
+            <a class=" card-text text-decoration-none text-center" href="#"><h4 class="card-text pb-3">S7-15B BOOKSHELF SPEAKERS</h4></a>
+          </div>
+        </div>
+      </div>
+      <div class=" col-sm-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3">
+        <div class="card mx-auto" style="width: 22rem;">
+          <a href="#"><img id="card-image4" src="images/imagewhite4.webp" class="card-img-top" alt="..."></a>
+          <div class="card-body">                
+            <p id="card-text4" class="card-title text-center">Grey</p>
+            <center>
+              <input id="grey-button4" class="card-button rounded-circle mx-1 mb-3" type="button" onclick="shift4('card-image4','card-text4','grey-button4')">
+              <input id="blue-button4" class="card-button rounded-circle mx-1 mb-3" type="button" onclick="shift4('card-image4','card-text4','blue-button4')">  
+            </center>
+            <a class=" card-text text-decoration-none text-center" href="#"><h4 class="card-text pb-3">S7-25C CENTER CHANNEL SPEAKER</h4></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 text-center my-3">
+        <div class="display-2">Jamo at Home</div>
+      </div>
+      <div class="co-12 text-center">
+        <p class="fs-4">Studio7 is all about hygge, the enjoyment of life in a warm atmosphere. <br>
+          Sit comfortably, relax and enjoy a sound as pure as the Scandinavian air.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="container-fluid my-5 px-5 position-relative overflow-hidden">
+    <button class="arrow prev position-absolute top-50 d-flex align-item-center justify-content-center py-2"><i class="fa-solid fa-angle-up fa-rotate-270"></i></button>
+    <button class="arrow next position-absolute top-50 d-flex align-item-center justify-content-center  py-2"><i class="fa-solid fa-angle-up fa-rotate-90"></i></button>
+    <div class="wrapper row my-5 flex-nowrap overflow-auto img-">
+      <div class="scrolling-images">
+        <img class="img-fluid" src="images/scroll1.webp" alt="">
+      </div>
+      <div class="scrolling-images">
+        <img class="img-fluid" src="images/scroll2.webp" alt="">
+      </div>
+      <div class="scrolling-images">
+        <img class="img-fluid" src="images/scroll3.webp" alt="">
+      </div>
+      <div class="scrolling-images">
+        <img class="img-fluid" src="images/scroll4.webp" alt="">
+      </div>
+      <div class="scrolling-images">
+        <img class="img-fluid" src="images/scroll5.webp" alt="">
+      </div>
+      <div class="scrolling-images">
+        <img class="img-fluid" src="images/scroll6.webp" alt="">
+      </div>
+      <div class="scrolling-images">
+        <img class="img-fluid" src="images/scroll7.webp" alt="">
+      </div>
+      <div class="scrolling-images">
+        <img class="img-fluid" src="images/scroll8.webp" alt="">
+      </div>
+    </div>
+  </section>
+    
+  <section class="container-fluid mb-5">
+    <div class="row ">
+      <div class="col-xl-6 col-md-6 col-sm-6 col-6 position-relative">
+       <div id="bottom-image1">
+          <img  class="img-fluid rounded-5" src="images/las1.webp" alt="#">
+       </div>
+        <div id="bottom-image2">
+          <img  class="img-fluid rounded-5" src="images/las2.webp" alt="#">
+        </div>
+      </div>
+      <div class="col-xl-6 col-md-6 col-sm-6 col-6 pt-5 h-100">
+        <p class="display-4 text-center">50 year legacy</p>
+        <p class="text-center fs-4">Our story started in 1968 in Glyngøre, a tiny fishing village nested on the north shore of Denmark, Jamo was founded by two brothers-in-law, Preben Jacobsen and Julius Mortensen.</p>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <hr style="margin-top: 300px;">
+
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <table class="mt-4">
+          <tr>
+            <td style= "padding-right: 200px; font-size: x-large;font-weight:450; color: rgb(65, 65, 65)">HISTORY</td>
+            <td style= "padding-right: 200px; font-size: x-large;font-weight:450; color: rgb(65, 65, 65)">TERMS</td>
+            <td style= "padding-right: 200px; font-size: x-large;font-weight:450; color: rgb(65, 65, 65)">CAREERS</td>
+          </tr>
+          <tr>
+            <td style= "padding-right: 200px; font-size: x-large;font-weight:450; color: rgb(65, 65, 65)">TECHNOLOGY</td>
+            <td style= "padding-right: 200px; font-size: x-large;font-weight:450; color: rgb(65, 65, 65)">PRIVACY</td>
+          </tr>
+        </table>
+        <p class="my-5" style="font-size: 17px; font-weight: 550;">© 2023 11 TRADING COMPANY, LLC -ALL RIGHTS RESERVED</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="mobilenav.js"></script>
+  <script src="mainheader.js"></script>
+  <script src="card.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
+
