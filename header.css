@@ -174,7 +174,7 @@ div.navigation{
 #bottom-image2{
     width: 40vw;
     position:absolute;
-    top: 70px;
+    top: 8vh;
     left: 15%;
 }
 @keyframes scrollUp{
